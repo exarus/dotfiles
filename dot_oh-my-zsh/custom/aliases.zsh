@@ -1,0 +1,8 @@
+alias cat="bat"
+alias grep="rg --smart-case --context 4"
+alias rg="rg --smart-case --context 4"
+alias ls="exa --all --group-directories-first --icons --color=always --git-ignore"
+alias l="exa --all --group-directories-first --icons --color=always --git-ignore --long --git"
+alias ll="exa --all --group-directories-first --icons --color=always --git-ignore --long --git"
+alias lg="exa --all --group-directories-first --icons --color=always"
+alias llg="exa --all --group-directories-first --icons --color=always --long --git"

@@ -1,0 +1,21 @@
+[user]
+	name = Ruslan Gunawardana
+	email = mr.exarus@gmail.com
+[commit]
+	gpgSign = true
+[tag]
+	gpgSign = true
+	forceSignAnnotated = true
+[pull]
+	rebase = false
+[core]
+	autocrlf = input
+	excludesfile = --unset
+[credential]
+	helper = osxkeychain
+[init]
+	defaultBranch = main
+[gpg]
+	program = /usr/local/bin/gpg
+[diff]
+	algorithm = histogram
