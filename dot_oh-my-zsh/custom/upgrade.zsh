@@ -1,6 +1,6 @@
 upgrade() {
   omz update
-  # chezmoi -R apply
+  chezmoi -R apply
   source ~/.zshrc
   brew update
   brew upgrade
