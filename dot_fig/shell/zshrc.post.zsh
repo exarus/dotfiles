@@ -1,1 +1,1 @@
-eval "$(~/.local/bin/fig init zsh post --rcfile zshrc)"
+[ -x ~/.local/bin/fig ] && eval "$(~/.local/bin/fig init zsh post --rcfile zshrc)"

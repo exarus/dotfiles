@@ -1,1 +1,1 @@
-eval "$(~/.local/bin/fig init zsh pre --rcfile zshrc)"
+[ -x ~/.local/bin/fig ] && eval "$(~/.local/bin/fig init zsh pre --rcfile zshrc)"

@@ -1,6 +1,6 @@
 upgrade() {
   omz update
-  chezmoi -R apply
+  # chezmoi -R apply
   source ~/.zshrc
   brew update
   brew upgrade
@@ -8,4 +8,5 @@ upgrade() {
   fnm install --lts
   npm i -g npm corepack
   corepack enable
+  corepack prepare yarn@stable --activate
 }
