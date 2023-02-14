@@ -121,6 +121,10 @@ fi
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# fnm
+export PATH="/Users/exarus/Library/Application Support/fnm:$PATH"
+eval "`fnm env --use-on-cd`"
+
 # Setup Starship prompt
 eval "$(starship init zsh)"
 
