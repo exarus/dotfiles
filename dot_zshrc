@@ -125,6 +125,9 @@ fi
 export PATH="/Users/exarus/Library/Application Support/fnm:$PATH"
 eval "`fnm env --use-on-cd`"
 
+# node
+export NODE_OPTIONS="--max-old-space-size=8192"
+
 # Setup Starship prompt
 eval "$(starship init zsh)"
 
