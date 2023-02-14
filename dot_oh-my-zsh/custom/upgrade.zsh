@@ -6,7 +6,8 @@ upgrade() {
   brew upgrade
   brew autoremove
   fnm install --lts
-  npm i -g npm corepack
+  fnm alias $(node -v) default
+  npm i -g npm@latest corepack@latest
   corepack enable
   corepack prepare yarn@stable --activate
 }
