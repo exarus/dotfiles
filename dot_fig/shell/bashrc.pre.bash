@@ -1,0 +1,1 @@
+[ -x ~/.local/bin/fig ] && eval "$(~/.local/bin/fig init bash pre --rcfile bashrc)"

@@ -1,0 +1,5 @@
+[2m2023-02-14T04:42:35.793331Z[0m [31mERROR[0m [2mfig_desktop::install[0m[2m:[0m [2m311:[0m Failed to remove figterm shell Bash copy [3merr[0m[2m=[0mNo such file or directory (os error 2)
+[2m2023-02-14T04:42:35.793331Z[0m [31mERROR[0m [2mfig_desktop::install[0m[2m:[0m [2m311:[0m Failed to remove figterm shell Nu copy [3merr[0m[2m=[0mNo such file or directory (os error 2)
+[2m2023-02-14T04:42:35.793334Z[0m [31mERROR[0m [2mfig_desktop::install[0m[2m:[0m [2m311:[0m Failed to remove figterm shell Zsh copy [3merr[0m[2m=[0mNo such file or directory (os error 2)
+[2m2023-02-14T04:42:35.793333Z[0m [31mERROR[0m [2mfig_desktop::install[0m[2m:[0m [2m311:[0m Failed to remove figterm shell Fish copy [3merr[0m[2m=[0mNo such file or directory (os error 2)
+[2m2023-02-14T04:42:35.996974Z[0m [31mERROR[0m [2mfig_desktop::install[0m[2m:[0m [2m132:[0m No update found
