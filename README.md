@@ -13,12 +13,6 @@ chown -R ${USER}:staff ~/Projects
 
 # Run `init.zsh` interactively
 
-# Install apps from Mac App Store
-* Bitwarden (`brew` version doesn't support Touch ID)
-* Monosnap - screenshot editor
-* Toggl Track: Hours & Time Log
-* Unsplash Wallpapers
-
 # Install apps the old way
 - Logi Bolt - from Logi Options Plus prompt
 
