@@ -1,0 +1,17 @@
+{
+  "app.preferredTerminal": "iTerm2",
+  "autocomplete.keybindings.enter": "ignore",
+  "autocomplete.keybindings.tab": "insertSelected",
+  "insertCommonPrefix": [
+    "autocomplete.keybindings.tab"
+  ],
+  "insertCommonPrefixOrNavigateDown": [
+    "autocomplete.keybindings.tab"
+  ],
+  "insertSelected": [
+    "autocomplete.keybindings.tab"
+  ],
+  "integrations.experimental": true,
+  "integrations.iterm.disabled": false,
+  "integrations.vscode.disabled": false
+}
