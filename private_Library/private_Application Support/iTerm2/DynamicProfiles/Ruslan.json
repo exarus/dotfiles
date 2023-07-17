@@ -3,11 +3,12 @@
     {
       "Guid": "148ce97a-3b3b-4b1a-9b22-2edade98a3db",
       "Name": "Ruslan",
-      "Normal Font": "JetBrainsMonoNerdFontCompleteM-Regular 16",
+      "Normal Font": "JetBrainsMonoNFP-Regular 16",
       "ASCII Ligatures": true,
       "Cursor Type" : 1,
       "Thin Strokes" : 3,
       "Option Key Sends" : 2,
+      "Show Mark Indicators" : false,
       "Keyboard Map" : {
         "0xf705-0x40000-0x0" : {
           "Action" : 10,
