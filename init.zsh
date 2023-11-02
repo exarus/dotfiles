@@ -39,3 +39,10 @@ rm -rf ./iTerm2-Color-Schemes
 # micro
 micro -plugin install editorconfig
 micro -plugin install wakatime
+
+# prevent Bluetooth from waking Mac
+brew install sleepwatcher blueutil
+echo "$(which blueutil) -p 0" > ~/.sleep
+echo "$(which blueutil) -p 1" > ~/.wakeup
+chmod 755 ~/.sleep ~/.wakeup
+brew services restart sleepwatcher

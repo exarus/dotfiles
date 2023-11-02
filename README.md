@@ -24,12 +24,16 @@ chown -R ${USER}:staff ~/Projects
 - Ask Siri: disable
 
 ## System Settings
+- Set `Battery` -> `Options...` -> `Enable Power Nap` to `Never`
+- Disable `Notifications` -> `Allow notifications when the display is sleeping`
+- Disable `Notifications` -> `Allow notifications when the screen is locked`
 - Press `Option+Command+D`
 - Enable `General` -> `Software Update` -> `Automatic updates` -> `ⓘ` -> `Install macOS updates`
 - Enable `General` -> `Software Update` -> `Automatic updates` -> `ⓘ` -> `Install application updates from the App Store`
 - Enable `Storage` -> `Empty Bin automatically`
 - Set `Control Centre` -> `Menu Bar Only` -> `Spotlight` to `Don't Show in Menu Bar`
 - Disable `Desktop & Dock` -> `Windows & Apps` -> `Close windows when quitting an application` (for `iTerm`)
+- Set `Desktop & Dock` -> `Hot Corners...` -> `Right Bottom` to `-`
 - Set `General` -> `Language & Region` -> `Number format` to `1,234,567.89`
 - Set `Trackpad` -> `More Gestures` -> `App Exposé` to `Swipe Down with Three Fingers`
 - Disable `Keyboard` -> `Keyboard Shortcuts...` -> `Spotlight` -> `Show Spolight Search`
