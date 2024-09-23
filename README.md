@@ -1,9 +1,9 @@
 # Transfer
 * `~/.ssh`
-* `~/.gnupg`
 * `~/Projects`
-* Export Jetbrains IDE settings
-* Export Raycast settings
+* Import Jetbrains IDE settings
+* Import Raycast settings
+
 ## Update permissions:
 ```zsh
 chown -R ${USER}:staff ~/.ssh
@@ -12,9 +12,6 @@ chown -R ${USER}:staff ~/Projects
 ```
 
 # Run `init.zsh` interactively
-
-# Install apps the old way
-- Logi Bolt - from Logi Options Plus prompt
 
 # Customize
 ## macOS Installation
@@ -45,18 +42,15 @@ chown -R ${USER}:staff ~/Projects
 - Enable `Keyboard` -> `Text Input` -> `Input Sources` -> `Edit...` -> `All Input Sources` -> `Use the Caps Lock key to switch to and from ABC`
 - Change `Keyboard` -> `Touch Bar Settings...` -> `Customise Control Strip...` from `Siri` to `Input Sources`
 
-## Calendar
-- Add [calendar](https://mail.zoho.com/zm/#settings/zc-settings-synchronize)
+## Google Chrome
+- Set as default browser
 
 ## Finder
 - Disable `Preferences` -> `General` -> `Show these items on the desktop` -> `External disks`
 - Set `Preferences` -> `Advanced` -> `Show all filename extensions`
 
-## AltTab
-- Change `Option + Tab` -> `Command + Tab`
-- Change `` Option + ` `` -> `` Command + ` ``
-
 ## Bitwarden
+- Vault timeout 
 - Enable `Settings...` -> `Unlock with Touch ID`
 - Enable `Settings...` -> `Allow browser integration`
 
@@ -80,12 +74,8 @@ Profile from Dotfiles contains these changes:
 * Set `Profiles` `Text -> Font -> Size` to `16`
 * Enable `Profiles` `Text -> Font -> Use ligatures`
 
-## MEGAsync
-* Selective sync
-* Link `MEGAsync` with `~/MEGAsync`
-
-## Messenger
-* Disable `Preferences` -> `Bubbles` -> `Show your chats as bubbles`
+## MEGA
+* Selective sync with default settings (`MEGA` -> `~/MEGA`)
 
 ## Slack
 * `Dock Icon` -> `Options` -> `Open at Login`

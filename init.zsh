@@ -1,31 +1,41 @@
 #!/bin/zsh
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-(echo; echo 'eval "$(/usr/local/bin/brew shellenv)"') >> /Users/exarus/.zprofile
-eval "$(/usr/local/bin/brew shellenv)"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-xcode-select --install
+(echo; echo 'eval "$(/opt/homebrew/bin/brew shellenv)"') >> "$HOME/.zprofile"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 brew bundle
-# chezmoi (before all)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+chmod 600 ~/.ssh/id_ed25519
+ssh-keygen -f ~/.ssh/id_ed25519 -y > ~/.ssh/id_ed25519.pub
 chezmoi init --apply git@github.com:exarus/dotfiles.git
-exec zsh
+pinentry-touchid -fix
 
-open -W /usr/local/Caskroom/battle-net/latest/Battle.net-Setup.app # battle-net (interactive)
-gh auth login -h github.com -p ssh # gh (interactive)
-mkdir ~/MEGAsync # megasync
+# Battle.net
+open /opt/homebrew/Caskroom/battle-net/latest/Battle.net-Setup.app # interactive
 
 # google-chrome (interactive)
-git clone git@github.com:iamadamdev/bypass-paywalls-chrome.git ~/Projects/utils/bypass-paywalls-chrome
-open ~/Projects/utils/bypass-paywalls-chrome
-# see https://github.com/iamadamdev/bypass-paywalls-chrome#installation-instructions
+# before doing enable VPN. See more at https://github.com/bpc-clone/bypass-paywalls-chrome-clean?tab=readme-ov-file#installation
+curl -o bypass-paywalls-chrome-clean-master.zip https://gitflic.ru/project/magnolia1234/bpc_uploads/blob/raw\?file\=bypass-paywalls-chrome-clean-master.zip
+unzip bypass-paywalls-chrome-clean-master.zip
+open .
+# add to chrome
+rm -rf bypass-paywalls-chrome-clean-master bypass-paywalls-chrome-clean-master.zip
+
+# firefox
+# See more at https://github.com/bpc-clone/bypass-paywalls-chrome-clean?tab=readme-ov-file#installation
+curl -o bypass_paywalls_clean-latest.xpi https://gitflic.ru/project/magnolia1234/bpc_uploads/blob/raw?file=bypass_paywalls_clean-latest.xpi
+open .
+rm bypass_paywalls_clean-latest.xpi
 
 # keka (interactive)
+brew install --cask kekaexternalhelper
 open -W /Applications/KekaExternalHelper.app
 brew uninstall --cask kekaexternalhelper
 
-# logi-options-plus (interactive)
-sudo open -W "$(brew info --cask logi-options-plus | sed -n 3p | cut -d ' ' -f1)/logioptionsplus_installer.app"
+# volta
+volta setup
+volta install node
+npm install -g npm@latest
 
-# fnm
 fnm install --lts
 npm up -g
 corepack enable
@@ -35,14 +45,3 @@ corepack prepare yarn@stable --activate
 git clone --depth 1 https://github.com/mbadolato/iTerm2-Color-Schemes.git
 ./iTerm2-Color-Schemes/tools/import-scheme.sh ./iTerm2-Color-Schemes/schemes/*
 rm -rf ./iTerm2-Color-Schemes
-
-# micro
-micro -plugin install editorconfig
-micro -plugin install wakatime
-
-# prevent Bluetooth from waking Mac
-brew install sleepwatcher blueutil
-echo "$(which blueutil) -p 0" > ~/.sleep
-echo "$(which blueutil) -p 1" > ~/.wakeup
-chmod 755 ~/.sleep ~/.wakeup
-brew services restart sleepwatcher
