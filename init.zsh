@@ -36,10 +36,8 @@ volta setup
 volta install node
 npm install -g npm@latest
 
-fnm install --lts
-npm up -g
-corepack enable
-corepack prepare yarn@stable --activate
+# gh
+gh auth login
 
 # iterm2
 git clone --depth 1 https://github.com/mbadolato/iTerm2-Color-Schemes.git

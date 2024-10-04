@@ -3,11 +3,11 @@
 * `~/Projects`
 * Import Jetbrains IDE settings
 * Import Raycast settings
+* Import GPG Key
 
 ## Update permissions:
 ```zsh
 chown -R ${USER}:staff ~/.ssh
-chown -R ${USER}:staff ~/.gnupg
 chown -R ${USER}:staff ~/Projects
 ```
 
@@ -16,7 +16,7 @@ chown -R ${USER}:staff ~/Projects
 # Customize
 ## macOS Installation
 - Theme: Dark
-- File Vault: enable
+- File Vault: enable, disable iCloud recovery
 - Location: enable
 - Ask Siri: disable
 
@@ -50,9 +50,10 @@ chown -R ${USER}:staff ~/Projects
 - Set `Preferences` -> `Advanced` -> `Show all filename extensions`
 
 ## Bitwarden
-- Vault timeout 
+- Vault timeout
 - Enable `Settings...` -> `Unlock with Touch ID`
 - Enable `Settings...` -> `Allow browser integration`
+- Enable `Settings...` -> `Close to menu bar`
 
 ## Calibre
 * Next >
