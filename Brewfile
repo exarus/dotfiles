@@ -19,6 +19,7 @@ brew 'pinentry-mac'
 brew 'jorgelbg/tap/pinentry-touchid'
 
 # cask 'android-file-transfer'
+cask 'arc'
 cask 'amazon-q'
 cask 'battle-net'
 # cask 'calibre'
@@ -51,3 +52,4 @@ cask 'webstorm'
 mas 'Bitwarden', id: 1352778147
 mas 'Unsplash Wallpapers', id: 1284863847
 mas 'MEGA VPN', id: 6456784858
+mas 'Windows App', id: 1295203466
