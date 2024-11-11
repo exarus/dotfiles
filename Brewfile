@@ -49,6 +49,10 @@ cask 'webstorm'
 # cask 'MonitorControl'
 # cask 'homebrew/cask-drivers/logitech-g-hub' # 100% CPU usage on Intel Macs
 
+# Work
+cask 'slack'
+cask 'linear-linear'
+
 #mas 'Balance Lock', id: 1019371109
 mas 'Bitwarden', id: 1352778147
 mas 'Unsplash Wallpapers', id: 1284863847
