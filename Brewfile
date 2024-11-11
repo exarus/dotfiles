@@ -4,6 +4,7 @@ brew 'chezmoi'
 brew 'eza'
 brew 'fnm'
 brew 'gh'
+brew 'pnpm'
 brew 'ripgrep'
 brew 'starship'
 # brew 'fd'
@@ -52,6 +53,14 @@ cask 'webstorm'
 # Work
 cask 'slack'
 cask 'linear-linear'
+brew 'pkg-config'
+brew 'cairo'
+brew 'pango'
+brew 'libpng'
+brew 'jpeg'
+brew 'giflib'
+brew 'librsvg'
+brew 'pixman'
 
 #mas 'Balance Lock', id: 1019371109
 mas 'Bitwarden', id: 1352778147
