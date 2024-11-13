@@ -35,7 +35,7 @@ chown -R ${USER}:staff ~/Projects
 - Set `Trackpad` -> `More Gestures` -> `App Exposé` to `Swipe Down with Three Fingers`
 - Disable `Keyboard` -> `Keyboard Shortcuts...` -> `Spotlight` -> `Show Spolight Search`
 - Disable `Keyboard` -> `Keyboard Shortcuts...` -> `Spotlight` -> `Show Finder search window`
-- Set `Keyboard` -> `Keyboard Shortcuts...` -> `Input Sources` -> `Select the previous input source` to `Command+Control+Option+Space`
+- Set `Keyboard` -> `Keyboard Shortcuts...` -> `Input Sources` -> `Select the previous input source` to `Command+Option+Space`
 - Disable `Keyboard` -> `Keyboard Shortcuts...` -> `Input Sources` -> `Select the next input source`
 - Disable `Keyboard` -> `Keyboard Shortcuts...` -> `Services` -> `Searching`
 - Disable `Keyboard` -> `Keyboard Shortcuts...` -> `Services` -> `Text`
