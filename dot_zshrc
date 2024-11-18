@@ -76,6 +76,7 @@ zstyle ':omz:update' mode auto      # update automatically without asking
 plugins=(
   fnm
   git
+  pnpm # https://github.com/ntnyq/omz-plugin-pnpm
   pnpm-shell-completion # https://github.com/g-plane/pnpm-shell-completion
   zsh-syntax-highlighting # https://github.com/zsh-users/zsh-syntax-highlighting
   zsh-history-substring-search # https://github.com/zsh-users/zsh-history-substring-search
