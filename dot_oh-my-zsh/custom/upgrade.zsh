@@ -5,5 +5,5 @@ upgrade() {
   brew upgrade
   brew autoremove
   brew cleanup
-  volta install node npm yarn
+#  volta install node npm yarn
 }
