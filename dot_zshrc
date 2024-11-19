@@ -119,5 +119,8 @@ test -e /Users/exarus/.iterm2_shell_integration.zsh && source /Users/exarus/.ite
 
 eval "$(fnm env --use-on-cd --shell zsh)"
 
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+
 # Amazon Q post block. Keep at the bottom of this file.
 [[ -f "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh" ]] && builtin source "${HOME}/Library/Application Support/amazon-q/shell/zshrc.post.zsh"
